@@ -1,0 +1,130 @@
+
+=== ucl_per_month
+           m        n  uniq_id   users  with_sub
+0 2026-02-01  1317322  1317322   94319     28580
+1 2026-03-01   844983   844983   90806     58723
+2 2026-04-01   661167   661167   70560    214858
+3 2026-05-01   997914   997914  101036    278010
+4 2026-06-01  2425983  2425983  163603    389887
+5 2026-07-01  3295038  3295038  240251    408392
+6 2026-08-01  5248691  5248691  417909    484643
+7 2026-09-01  7959312  7959312  613717    803973
+
+=== mobile_settings
+  platform    version                                                            keys                                                                                                                                                                                                                                                                     ads
+0  windows  2026.9.22  [ads, link, featSub, referral, requiredUpdate, showDemoButton]  {"showAppOpenAdOpen":false,"showLowerBannerAd":false,"showUpperBannerAd":false,"showRewardedAdLimit":false,"showAppOpenAdConnect":false,"showRewardedAdTryFix":false,"showRewardedAdConnect":false,"showInterstitialAdTryFix":false,"showInterstitialAdConnect":false}
+1      ios  2026.9.10  [ads, link, featSub, referral, requiredUpdate, showDemoButton]  {"showAppOpenAdOpen":false,"showLowerBannerAd":false,"showUpperBannerAd":false,"showRewardedAdLimit":false,"showAppOpenAdConnect":false,"showRewardedAdTryFix":false,"showRewardedAdConnect":false,"showInterstitialAdTryFix":false,"showInterstitialAdConnect":false}
+
+=== top_device_ids
+    device_identifier   users      ct       os
+0  AP3A.240905.015.A2  104880  mobile  android
+1     TP1A.220624.014   79695  mobile  android
+2     UP1A.231005.007   78066  mobile  android
+3  BP2A.250605.031.A3   73312  mobile  android
+4     SP1A.210812.016   34463  mobile  android
+5     BP4A.251205.006   14777  mobile  android
+6     AQ3A.240829.003   13737  mobile  android
+7     TKQ1.221114.001   13607  mobile  android
+
+=== trial_by_device
+   users_per_dev  devs
+0              1  6175
+1              2   320
+2              3    61
+3              4    28
+4              5     7
+5              6     5
+6              7     3
+7              8     4
+8             12     1
+
+=== trial_by_card
+   users_per_card  cards
+0               1   4290
+1               2    547
+2               3     83
+3               4     23
+4               5      4
+5               6      1
+
+=== trial_by_external_acc
+   users_per_acc  accs
+0              1  5381
+
+=== trial_by_ip_day
+    users_per_ip_day  groups
+0                  2    1378
+1                  3     252
+2                  4     191
+3                  5     214
+4                  6     228
+5                  7     215
+6                  8     234
+7                  9     212
+8                 10     217
+9                 11     176
+10                12     181
+11                13     163
+12                14     165
+13                15     138
+14                16     143
+15                17     107
+16                18      93
+17                19     100
+18                20      91
+19                21      72
+
+=== trial_delay_after_signup_days
+       n       p10       p50        p90      neg
+0  22193 -0.124672 -0.122498  57.644911  13907.0
+
+=== funnel
+   signups  clients  trial_paid  buyers
+0  1844880   667962       22193   19284
+
+=== trial_payment_outcome
+    status  orders  users
+0     paid   22198  22193
+1  pending     649    474
+2   failed   16073  12360
+
+=== trial_to_paid
+   trial_users  bought   pct  bought_before_trial       q25       q50       q75
+0        22193   12582  56.7                145.0  3.000719  3.001112  3.003454
+
+=== buy_no_trial
+   buyers_no_trial       p10      p50        p90     neg
+0             6702 -0.124669 -0.12227  55.715151  4271.0
+
+=== first_purchase_mix
+    product_id  period_id      n
+0            5          1  17795
+1            2          1   1147
+2            2          2    114
+3            2          3     86
+4            3          1     76
+5            5          2     20
+6            2          4     14
+7            4          1     11
+8            3          2      8
+9            3          3      7
+10           5          3      3
+11           3          4      1
+12           4          3      1
+13           4          4      1
+
+=== ads_free_user_days
+   free_user_days  days_with_ads  pct_with_ads  p50  p90   p99
+0         7245516        1556609          21.5  2.0  9.0  25.0
+
+=== ads_buckets
+   bucket  user_days   users      views
+0     1-3    1238291  379703  2023777.0
+1    4-10     499880  138673  2971102.0
+2   11-25     124105   38689  1866614.0
+3  26-100      17301    6624   625274.0
+4    >100        321     216    65884.0
+
+=== ads_per_user_month
+   p50   p90    p99
+0  3.0  30.0  161.0

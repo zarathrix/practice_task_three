@@ -1,0 +1,102 @@
+=== disconnect reasons
+[('timeLimitReached', 6148), ('trafficLimitReached', 2046), ('serverUnavailable', 34)]
+
+=== keyword messages (по числу отчётов)
+419 3733 N-N-NTN:N:N.N  [D]  uploadLogs started, withExtendedLogs=true
+414 5119 N-N-NTN:N:N.N  [I]  Realtime disconnect received from websocket (eventId=<uuid> deviceId=null sessionId=null reason=DisconnectReason.timeLimitReached rawReason=timeLimitR
+345 1673 N-N-NTN:N:N.N  [I]  Realtime disconnect received from websocket (eventId=<uuid> deviceId=null sessionId=null reason=DisconnectReason.trafficLimitReached rawReason=traffic
+252 729 N-N-NTN:N:N.N  [E]  [RewardedAdManager.loader] Ad failed to load: Ad failed to load with unit id R-M-N-N and code N: Ad request failed with network error. Please try agai
+250 780 N-N-NTN:N:N.N  [W]  [MobileAdsRepositoryImpl.loadRewardedAd] Rewarded ad failed to load: Ad failed to load with unit id R-M-N-N and code N: Ad request failed with network
+161 18743 N-N-NTN:N:N.N  [D]  [TrafficBloc] Profile info changed
+156 5392 N-N-NTN:N:N.N  [D]  [TrafficLimitBloc] Initializing traffic limit bloc
+147 25311 N-N-NTN:N:N.N  [D]  [TrafficLimitBloc] Converting to GB: spent=N.N, max=N.N
+146 24770 N-N-NTN:N:N.N  [D]  [TrafficLimitBloc] Updating traffic: spent=N.N GB, max=N.N GB, limitReached=false
+136 32721 N-N-NTN:N:N.N  [D]  [RewardedAdManager] Attempt to load rewarded ad
+133 13141 N-N-NTN:N:N.N  [D]  [RewardedAdManager.loader] Ad loaded
+133 13141 N-N-NTN:N:N.N  [D]  [RewardedAdManager] Load result: true
+130 18233 N-N-NTN:N:N.N  [D]  [RewardedAdManager] Rewarded ad already loaded
+129 9388 N-N-NTN:N:N.N  [D]  [RewardedAdManager] Attempt to show rewarded ad
+129 9364 N-N-NTN:N:N.N  [D]  [RewardedAdManager.listener] Ad shown
+129 9023 N-N-NTN:N:N.N  [D]  [RewardedAdManager.listener] User rewarded: Instance of 'Reward'
+129 9020 N-N-NTN:N:N.N  [D]  [RewardedAdManager.listener] Ad dismissed
+129 9014 N-N-NTN:N:N.N  [D]  [RewardedAdManager] Rewarded ad finished. Reward granted: true
+124 4246 N-N-NTN:N:N.N  [D]  [RewardedAdManager] Create RewardedAdLoader
+114 253 N-N-NTN:N:N.N  [I]  Realtime disconnect received from push:foreground (eventId=<uuid> deviceId=null sessionId=null reason=DisconnectReason.timeLimitReached rawReason=time
+98 253 N-N-NTN:N:N.N  [I]  Realtime disconnect received from push:openedApp (eventId=<uuid> deviceId=null sessionId=null reason=DisconnectReason.timeLimitReached rawReason=timeL
+93 1150 N-N-NTN:N:N.N  [D]  [RewardedAdManager] Already loading, awaiting current load
+91 1791 N-N-NTN:N:N.N  [D]  [TrafficLimitBloc] Ad reward granted: true
+90 275 N-N-NTN:N:N.N  [W]  [MobileAdsRepositoryImpl.showRewardedAd] Reward not granted
+78 163 N-N-NTN:N:N.N  [I]  Realtime disconnect received from push:openedApp (eventId=<uuid> deviceId=null sessionId=null reason=DisconnectReason.trafficLimitReached rawReason=tr
+71 541 N-N-NTN:N:N.N  [D]  [TrafficLimitBloc] Updating traffic: spent=N.N GB, max=N.N GB, limitReached=true
+70 524 N-N-NTN:N:N.N  [I]  Defer cold-start disconnect until VPN status sync (eventId=<uuid> reason=DisconnectReason.timeLimitReached rawReason=timeLimitReached)
+69 523 N-N-NTN:N:N.N  [I]  Realtime disconnect received from push:initial (eventId=<uuid> deviceId=null sessionId=null reason=DisconnectReason.timeLimitReached rawReason=timeLim
+59 125 N-N-NTN:N:N.N  [I]  Realtime disconnect received from push:foreground (eventId=<uuid> deviceId=null sessionId=null reason=DisconnectReason.trafficLimitReached rawReason=t
+56 1594 N-N-NTN:N:N.N  [D]  received frame: {deviceId: , eventId: <uuid>, eventType: event.disconnect, notification: {body: Часовая сессия завершена. Подключись снова или оформи 
+50 113 N-N-NTN:N:N.N  [D]  [RewardedAdManager] Load result: false
+49 136 N-N-NTN:N:N.N  [D]  received frame: {deviceId: , eventId: <uuid>, eventType: event.disconnect, limitBytes: N, notification: {body: Трафик закончился. Посмотри рекламу, чт
+45 231 N-N-NTN:N:N.N  [D]  FCM remote message: {senderId: null, category: null, collapseKey: com.vipin.pipster, contentAvailable: false, data: {payload: {"deviceId":"","eventId"
+42 85 N-N-NTN:N:N.N  [I]  Defer cold-start disconnect until VPN status sync (eventId=<uuid> reason=DisconnectReason.trafficLimitReached rawReason=trafficLimitReached)
+42 85 N-N-NTN:N:N.N  [I]  Realtime disconnect received from push:initial (eventId=<uuid> deviceId=null sessionId=null reason=DisconnectReason.trafficLimitReached rawReason=traf
+42 393 N-N-NTN:N:N.N  [E]  [RewardedAdManager.loader] Ad failed to load: Ad failed to load with unit id R-M-N-N and code N: Ad request completed successfully, but there are no a
+40 387 N-N-NTN:N:N.N  [W]  [MobileAdsRepositoryImpl.loadRewardedAd] Rewarded ad failed to load: Ad failed to load with unit id R-M-N-N and code N: Ad request completed successfu
+35 227 N-N-NTN:N:N.N  [D]  [TrafficLimitBloc] Rewarded flow already in progress
+34 45 N-N-NTN:N:N.N  [E]  [TrafficLimitBloc] Failed to complete rewarded flow: DioException [connection timeout]: The request connection took longer than N:N:N.N and it was abo
+28 585 N-N-NTN:N:N.N  [D]  [TrafficLimitBloc] Traffic limit is disabled, emitting TrafficLimitDisabled
+
+=== coverage
+    rows  users  user_days          mn          mx
+0  25311     80        426  2026-08-05  2026-09-28
+
+=== limits
+           lim      mb   rows  users
+0    524288000   500.0  16245     72
+1    724288000   691.0    964     31
+2    924288000   881.0    608     20
+3   1124288000  1072.0    410     17
+4   2924288000  2789.0    385      4
+5   2724288000  2598.0    235      5
+6    726004123   692.0    225      1
+7   1324288000  1263.0    224     10
+8   3324288000  3170.0    218      3
+9    968925276   924.0    208      1
+10   935715532   892.0    189      1
+11  2124288000  2026.0    183      6
+
+=== daily_usage_mb (дни с лимитом 500 МиБ)
+   user_days                                                                                                                   q_mb  pct_at_limit
+0        387  [21.471009254455566, 177.3505516052246, 660.6522698402405, 1622.8727430343665, 2625.2310138702373, 4556.899817295073]          31.3
+
+=== threshold_curve (какой % user-days упирается в порог)
+    thr  pct_days
+0    50      70.2
+1   100      63.6
+2   200      50.2
+3   300      41.5
+4   400      35.0
+5   500      33.3
+6   750      26.1
+7  1000      20.7
+8  2000       8.9
+
+=== limit_increases (прирост лимита)
+   mb_added     n  users
+0     191.0  1513     34
+1     198.0    21      3
+2     192.0    21      5
+3     200.0    20      3
+4     266.0    15      1
+5     197.0    14      4
+6     202.0    14      3
+7     223.0    11      1
+8     263.0    11      2
+9     242.0    10      1
+
+=== used_resets_hour
+ERROR: Parser Error: syntax error at or near "hour"
+
+LINE 2:       select substr(ts,12,2) hour, count(*) resets from s where du<0 group by 1 order...
+                                     ^^^^
+
+=== days_with_any_extension
+   user_days  hit_limit  extended  pct_hit_then_extended
+0        426      129.0     171.0                  132.6

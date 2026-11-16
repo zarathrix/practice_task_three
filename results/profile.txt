@@ -1,0 +1,104 @@
+
+=== users
+         n  with_trial  deleted                         mn                         mx  uniq_appm  has_appm   guests
+0  1844880       22197    37173 2024-11-21 10:15:54.434495 2026-09-29 12:17:10.740451          0         0  32182.0
+
+=== users_role
+     role  count_star()
+0  client        667962
+1   admin             5
+2   guest       1176913
+
+=== products
+   id     name  limit_id                 created_at  amount currency
+0   1    Basic         1 2025-04-15 09:10:48.734935    0.00      USD
+1   2   Silver         2 2025-04-15 09:10:48.734935    8.99      USD
+2   3     Gold         3 2025-04-15 09:10:48.734935   12.49      USD
+3   4  Diamond         4 2025-04-15 09:10:48.734935   21.99      USD
+4   5     Lite         5 2025-05-23 10:04:30.427987    4.49      USD
+
+=== trial_cfg
+   id  product_id  amount currency  duration  enabled  duration_days
+0   1           5     1.0      USD        72     True              3
+
+=== orders_split
+    product_id  trial   status      n      u                         mn                         mx   amin     amax
+0            2  False   failed   5607   3160 2025-04-17 12:23:38.983054 2026-09-29 08:36:00.021932  349.0  31088.5
+1            2  False     paid   5437   2284 2025-04-21 19:05:01.933955 2026-09-29 11:42:30.500979    0.0   5389.2
+2            2  False  pending   2173    590 2025-05-20 19:07:00.009447 2026-09-29 08:35:14.590085    7.9  35114.9
+3            3  False   failed    602    394 2025-04-17 13:41:51.612502 2026-09-28 18:06:00.006291  499.0   7009.2
+4            3  False     paid    487    210 2025-06-14 08:32:12.797255 2026-09-28 16:00:00.014774    0.0   6123.6
+5            3  False  pending    207     91 2025-11-28 09:23:30.372923 2026-09-26 10:59:00.362385    0.0  44648.8
+6            4  False   failed    297    237 2025-04-22 07:44:10.129903 2026-09-28 21:14:00.016552  799.0  12949.2
+7            4  False     paid     95     62 2025-08-20 11:27:46.931921 2026-09-28 15:37:34.477872    0.0  10071.6
+8            4  False  pending     40     29 2026-03-19 13:03:51.378535 2026-09-19 16:25:04.041431   18.9  85892.9
+9            5  False   failed  31350  16113 2025-05-23 10:14:41.745568 2026-09-29 08:53:02.477069  149.0   5976.0
+10           5  False     paid  41725  18080 2025-05-24 16:05:20.310666 2026-09-29 08:58:00.006637    0.0   2148.0
+11           5  False  pending   9066   4666 2025-07-08 12:56:00.009798 2026-09-29 09:04:10.608723    3.9   2451.5
+12           5   True   failed  16073  12360 2025-06-11 17:34:09.087008 2026-09-29 07:16:23.747596   10.0    546.0
+13           5   True     paid  22198  22193 2025-06-10 11:37:44.660068 2026-09-29 08:47:46.588290    1.0    546.0
+14           5   True  pending    649    474 2025-08-10 19:00:19.371377 2026-09-29 08:31:51.493398    1.0    546.0
+
+=== devices_nulls
+         n  has_ident  uniq_ident  has_type    users
+0  2381480    1002188       67294   1006186  1841758
+
+=== multi_by_device
+   idents_multi  users_in_multi    maxc
+0          8888        671266.0  104880
+
+=== multi_by_appmetrica
+   ids_multi  users_in_multi  maxc
+0          0             NaN  <NA>
+
+=== multi_by_ip_trial
+   ips_multi  trial_users  maxc
+0        806      64890.0  2703
+
+=== trial_orders_per_user
+   n  users
+0  1  22188
+1  2      5
+
+=== time_to_purchase
+   buyers  had_trial                                           q_days_from_signup
+0   19417      12588  [-0.12434976113194446, 0.6721925039814814, 2.87813179598...
+
+=== adv_overview
+     views   users                  mn                         mx
+0  7552651  414504 2025-11-29 00:00:01 2026-09-29 11:53:44.951452
+
+=== adv_per_user_day
+   user_days                      q    mx
+0    1879898  [2.0, 5.0, 9.0, 25.0]  1886
+
+=== conn_per_month
+ERROR: Binder Error: No function matches the given name and argument types 'date_trunc(STRING_LITERAL, VARCHAR)'. You might need to add explicit type casts.
+	Candidate functions:
+	date_trunc(part VARCHAR, "t
+
+=== conn_per_user_day
+ERROR: Conversion Error: invalid date field format: "created_at", expected format is (YYYY-MM-DD) when casting from source column created_at
+
+LINE 2:   (select user_id, created_at::date d, count(*) c from us
+
+=== blocks
+          type             block_reason  count_star()
+0     BAN_TEMP  Превышен лимит запросов           241
+1  BAN_FOREVER  Превышен лимит запросов             5
+
+=== metrics
+                     metric_name   n            mn            mx
+0                          arppu  81    238.217391   1234.900000
+1                           arpu  81      3.964366    104.819005
+2                    churned_mrr  67      0.000000  24470.000000
+3   churned_paying_users_monthly  67      0.000000     78.000000
+4                  expansion_mrr  67      0.000000      0.000000
+5                     ltv_simple  67    143.232500   5203.230337
+6                            mrr  81  35006.000000  55338.000000
+7                     mrr_growth  81    -26.793412     28.437221
+8                        new_mrr  81           NaN           NaN
+9               reactivation_mrr  67      0.000000      0.000000
+10        retention_rate_monthly  67      0.000000     79.395005
+11    subscription_churn_monthly  81      0.076190      6.320692
+12       user_churn_rate_monthly  67      0.000000     97.174467
